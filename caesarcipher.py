@@ -1,4 +1,4 @@
-def CaesarCipher(string, shift=3):
+def caesar_cipher(string, shift=3):
     #we create our variables and transform the string in all lowercase so
     #to make the decryption easier.
     alphabet = list('abcdefghijklmnopqrstuvwxyz')
@@ -22,7 +22,7 @@ def CaesarCipher(string, shift=3):
 
 def all_solutions(string):
     for i in range(1, 26):
-        print i, CaesarCipher(string, i)
+        print i, caesar_cipher(string, i)
 
 
 print all_solutions('LQIRUPDWLRQ VHFXULWB')
